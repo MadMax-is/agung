@@ -1,0 +1,19 @@
+"""
+DATAPLOT1
+"""
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+plt.axis([0, 150, 0, 100])
+plt.axis('on')
+plt.grid(True)
+
+x = np.arange(0, 150, 1)
+y1 = 10 + np.exp(0.035 * x)
+
+plt.plot(x, y1, 'b', label='y1')
+
+plt.legend(loc='upper left')
+
+plt.show()
